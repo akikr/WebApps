@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body style="background-color: #c7e3f0">
+    <div
+        style="background-color: burlywood; font-size: large; text-align: center; margin-top:50px; margin: auto; width: 600px; border: 1px solid grey">
+        <h1>Simple EMI Calculator</h1>
+    </div>
+    <div
+        style="background-color: burlywood; font-size: x-large; text-align: center;  margin: auto; width: 600px; border: 1px solid grey">
+        <!-- <form action="index" method="GET"> -->
+        <form action="index" method="POST">
+            <br>
+            <div>
+                <!-- Here  for='el' should be equal to id="e1" -->
+                <label for="principal" style="float: left; margin-left: 20px;">Principal Ammount (Rs.)</label>
+                <input type="text" name="principal_ammount" id="principal" placeholder="Principal Ammount" size="20" required
+                    style="float: right; margin-right: 10px; font-size: large">
+            </div>
+            <br>
+            <br>
+            <div>
+                <label for="rate" style="float: left; margin-left: 20px;">Rate of Interest (% p.a)</label>
+                <input type="text" name="rate_of_interest" id="rate" placeholder="Rate of Interest" size="20" required
+                    style="float: right; margin-right: 10px; font-size: large">
+            </div>
+            <br>
+            <br>
+            <div>
+                <label for="time" style="float: left; margin-left: 20px;">Time Period (in months)</label>
+                <input type="text" name="time_period" id="time" placeholder="Time Period" size="20" required
+                style="float: right; margin-right: 10px; font-size: large">
+            </div>
+            <br>
+            <br>
+            <button type="reset" style="width: 250px; height: 50px; float: left; margin-left: 20px; font-size: x-large">Reset</button>
+            <button type="submit" style="width: 230px; height: 50px; float: right; margin-right: 10px; font-size: x-large">Calculate EMI</button>
+            <br>
+            <br>
+            <br>
+        </form>
+    </div>
+</body>
+</html>
