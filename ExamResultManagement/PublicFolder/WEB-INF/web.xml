@@ -1,0 +1,43 @@
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+    http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+    <servlet>
+        <servlet-name>AddDataServlet</servlet-name>
+        <servlet-class>AddDataServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SearchDataServlet</servlet-name>
+        <servlet-class>SearchDataServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UpdateDataServlet</servlet-name>
+        <servlet-class>UpdateDataServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EditDataServlet</servlet-name>
+        <servlet-class>EditDataServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ContactServlet</servlet-name>
+        <servlet-class>ContactServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddDataServlet</servlet-name>
+        <url-pattern>/add</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SearchDataServlet</servlet-name>
+        <url-pattern>/search</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UpdateDataServlet</servlet-name>
+        <url-pattern>/update</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EditDataServlet</servlet-name>
+        <url-pattern>/editdata</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ContactServlet</servlet-name>
+        <url-pattern>/contact</url-pattern>
+    </servlet-mapping>
+</web-app>
